@@ -136,7 +136,7 @@ jobs:
       - name: build Pyodide with packages ${{ matrix.pyodide_packages }}
         shell: bash -l {0}
         run: |
-          # This is necessary to use the ccache from emsdk
+          # This is necessary to use the ccache from emsdk ok
           source pyodide_env.sh
           ccache -z
           PYODIDE_PACKAGES=${{ matrix.pyodide_packages }} make
